@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>111111</title>
+        <linkrel ="stylesheet" type = "text/css" href="/static/style.css"
+        <script type="text/javascript" src="script_nowstudy.js"></script>
+    </head>
+    <body>
+        <div id="container">
+          <div class="pagetitle">
+            <h1>請問您現在就讀的學校是？</h1>
+    
+          </div>
+          <div id="main">
+            <form method="post" action="{{ url_for('end') }}">
+              <label for="education">現在就讀：</label>
+              <select name="education" id="education">
+                <option value="elementary school">國小</option>
+                <option value="juniorhigh">國中</option>
+                <option value="seniorhigh">高中</option>
+                <option value="techhigh">高職</option>
+                <option value="fiveyear">五專</option>
+                <option value="university">大學</option>
+                <option value="MS">研究所以上</option>
+    
+              </select>
+    
+              <button class="button" type="submit" name="submit">確認</button>
+            </form>
+          </div>
+        </div>
+      </body>
+    </html>
+    
